@@ -1,25 +1,25 @@
 # Where is Markdown Used?
 ---
 
--GitHub
--GitLab
--Bitbucket
--Azure DevOps
--VS Code
--Obsidian
--Jupyter Notebook
--Stack Overflow
--Reddit
--Discord
--Documentation websites
+- GitHub
+- GitLab
+- Bitbucket
+- Azure DevOps
+- VS Code
+- Obsidian
+- Jupyter Notebook
+- Stack Overflow
+- Reddit
+- Discord
+- Documentation websites
 
 ## Markdown File Extension
 
--README.md
--notes.md
--linux.md
--Basic Markdown Syntax
--Heading
+- README.md
+- notes.md
+- linux.md
+- Basic Markdown Syntax
+- Heading
 
 # Heading 1
 ## Heading 2
@@ -34,10 +34,6 @@ Git is a Version Control System
 *for Italic*
 
 ***Bold + Italic***
-
-Output:
-
-Git
 
 ~~for Strikethrough~~
 
@@ -85,7 +81,5 @@ git commit -m "First Commit"
 ```
 
 Links
-[DevopsNotes](https://github.com/discover-devops)
 
-Images
-![Logo](logo.png)
+[DevopsNotes](https://github.com/discover-devops)
