@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0077cc;
+            color:white;
+            padding:20px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            max-width:1100px;
+            margin:auto;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+            background:white;
+        }
+
+        .hero h1{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:18px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            background:#0077cc;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .features{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            padding:50px;
+        }
+
+        .card{
+            background:white;
+            width:300px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2>My Website</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Welcome to My Website</h1>
+
+<p>
+This is a simple HTML and CSS website created for learning.
+</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>HTML</h3>
+<p>HTML is used to create the structure of web pages.</p>
+</div>
+
+<div class="card">
+<h3>CSS</h3>
+<p>CSS is used to style and design web pages beautifully.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>JavaScript adds interactivity and dynamic behavior.</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 My Website | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
