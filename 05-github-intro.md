@@ -82,7 +82,7 @@ Done!
 Now you have a Remote Repository.
 
 # 4. Connect Local Repository to GitHub
-
+```
 - echo "# practice-" >> README.md
 - git init
 - git add README.md
@@ -90,9 +90,11 @@ Now you have a Remote Repository.
 - git branch -M main
 - git remote add origin https://github.com/gmuralimsd/practice-.git
 - git push -u origin main
-
+```
 
 ### this commands use for pull the project
+```
 - git remote add origin https://github.com/gmuralimsd/practice-.git
 - git branch -M main
 - git push -u origin main
+```
