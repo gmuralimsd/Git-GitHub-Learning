@@ -75,109 +75,49 @@ git branch
 ```
 Output
 
-* main
-  login
+*main
+ 
+ login
 
-* means current branch.
 
-List Branches
-
-Command
-
-git branch
-
-Example
-
-* main
-  login
-  payment
-  profile
-
-Current branch
-
-* main
-
-Show all branches
-
+### Show all branches
+```
 git branch -a
 
-Shows
+```
 
-Local branches
-Remote branches
+**Move from one branch to another.**
 
-Example
-
-* main
-  login
-  remotes/origin/main
-  remotes/origin/login
-Switch Branch
-
-Move from one branch to another.
-
-Command
-
-git switch branch-name
+```
+git switch <branch-name>
 
 Example
 
 git switch login
 
-Older command
-
-git checkout login
-
-Before switching
-
-* main
-  login
-
-After
-
-  main
-* login
-
-Shortcut
+```
 
 Create and switch together
+```
+git switch -c <branch-name>
+git checkout -b <branch-name>
 
-git switch -c login
-
-Older method
-
-git checkout -b login
-Rename Branch
-
-Current branch
-
-git branch -m new-name
-
-Example
-
-login
-
-Rename
-
-git branch -m login-page
-
-Result
-
-login-page
+```
 
 Rename another branch
-
-git branch -m old-name new-name
+```
+git branch -m <old-name> <new-name>
 
 Example
 
-git branch -m login authentication
-Delete Branch
+git branch -m main login
+```
 
-Delete merged branch
+for delete a Branch
+```
+git branch -d <login>
 
-git branch -d login
-
+```
 Git checks whether the branch is merged.
 
 If merged
@@ -185,15 +125,13 @@ If merged
 Deleted branch login.
 
 Force delete
-
+```
 git branch -D login
+```
 
-Use only if you really want to delete unmerged work.
+We Cannot delete current branch
 
-Cannot delete current branch
-
-Wrong
-
+```
 git branch -d main
 
 Switch first
@@ -203,176 +141,119 @@ git switch login
 Then
 
 git branch -d main
-Merge Branch
+```
+
+### Merge Branch
 
 Merge means combine one branch into another.
 
-Example
-
-main
-
-A → B
-
-login
-
-A → B → C → D
-
-Merge
-
+At the time of merging we must switch to `main` branch  
+```
 git switch main
+
+git merge login
+```
+
+# All Commands Togethe
+```
+# Check current branch
+git branch
+
+# Create a new branch
+git branch login
+
+# Switch to the new branch
+git switch login
+
+# Make changes to your files
+
+# Check status
+git status
+
+# Stage changes
+git add .
+
+# Commit changes
+git commit -m "Added login button"
+
+# Switch back to main
+git switch main
+
+# Merge the login branch
 git merge login
 
-Result
-
-main
-
-A → B → C → D
-Merge Process
-Step 1
-
-Current project
-
-main
-
-A → B
-Step 2
-
-Create branch
-
-main
-
-A → B
-
-      \
-       login
-Step 3
-
-Work on login
-
-main
-
-A → B
-
-      \
-       C → D
-Step 4
-
-Merge
-
-main
-
-A → B → C → D
-Fast Forward Merge
-What is it?
-
-A Fast Forward Merge happens when the target branch has not changed after the new branch was created.
-
-Git simply moves the branch pointer forward.
-
-No merge commit is created.
-
-Example
-
-main
-
-A → B
-
-Create login
-
-A → B
-
-        \
-         C → D
-
-Main has no new commits.
-
-Merge
-
-git switch main
-git merge login
-
-Result
-
-A → B → C → D
-
-Git simply moves main to the latest commit.
-
-Visualization
-
-Before
-
-main
-
-A → B
-
-        \
-         C → D
-
-After
-
-main
-
-A → B → C → D
-
-No extra merge commit.
-
-Advantages
-
-Clean history
-Simple
-Easy to understand
-No unnecessary merge commit
-Three-Way Merge
-What is it?
-
-A Three-Way Merge happens when both branches have new commits after they split.
-
-Git combines the histories and creates a new merge commit.
-
-Example
-
-Start
-
-A → B
-
-Create branch
-
-main
-
-A → B
-
-        \
-         login
-
-Developer 1 on main
-
-A → B → E
-
-Developer 2 on login
-
-A → B → C → D
-
-Now merge.
-
-Git creates a merge commit.
-
-          C → D
-         /      \
-A → B → E ------- M
-
-M is the merge commit.
-
-Command
-
-git switch main
-git merge login
-
-Why is it called "Three-Way"?
-
-Git compares three commits:
-
-The common ancestor (where the branches split)
-The latest commit on the current branch
-The latest commit on the branch being merged
+# View commit history
+git log --oneline
+
+# Delete the merged branch
+git branch -d login
+
+```
+# Why is it called "Three-Way-Merge"?
+
+- Git compares three commits:
+   - The common ancestor (where the branches split)
+    - The latest commit on the current branch
+    - The latest commit on the branch being merged
 
 Using these three points, Git decides how to combine the changes.
+
+
+## What is commit id ?
+
+1. A commit is a saved snapshot of your project at a specific point in time.
+2. It stores all the changes you have added to the staging area.
+3. Every commit has a unique ID (hash) to identify it.
+4. A commit should include a clear message describing the changes.
+5. Create a commit using the command: `git commit -m "Your commit message"`
+
+
+**# use this command for all commits**
+
+```git log
+```
+
+output
+
+```
+commit ae628ab9ff55ece8c984580f976f0d07bf6dad1e (HEAD -> main, origin2/main, origin/main)
+Author: gmurali <gmurali.msd@gmail.com>
+Date:   Wed Jul 15 09:28:02 2026 +0000
+
+    modefied
+
+commit 03b432f02fa4c193961a85d4a6f793d7b0e919c6
+Author: gmurali <gmurali.msd@gmail.com>
+Date:   Wed Jul 15 09:07:56 2026 +0000
+
+    added readme
+
+commit 1f56b29f6f08a3ea13368aadc893800d9ab7f437
+Author: gmurali <gmurali.msd@gmail.com>
+Date:   Wed Jul 15 08:52:20 2026 +0000
+
+    first commit
+```
+
+**# use this command for all compresh commits**
+```
+git log --online
+```
+
+output
+
+```
+ae628ab (HEAD -> main, origin2/main, origin/main) modefied
+03b432f added readme
+1f56b29 first commit
+```
+
+**# use this command for latest commit**
+
+```
+commit ae628ab9ff55ece8c984580f976f0d07bf6dad1e (HEAD -> main, origin2/main, origin/main)
+Author: gmurali <gmurali.msd@gmail.com>
+Date:   Wed Jul 15 09:28:02 2026 +0000
+
+    modefied
+```
