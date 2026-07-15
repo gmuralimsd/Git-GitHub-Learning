@@ -45,3 +45,10 @@ user.email=gmurali.msd@gmail.com
 core.editor=vs code
 ```
 
+### **Step 3: Remove Configuration**
+
+```bash
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global --unset core.editor
+```
