@@ -4,7 +4,7 @@ A complete list of commonly used Git commands with examples.
 
 ---
 
-# 1. Check Git Version
+## 1. Check Git Version
 
 ```bash
 git --version
@@ -22,7 +22,7 @@ git version 2.50.1
 
 ---
 
-# 2. Configure Username
+## 2. Configure Username
 
 ```bash
 git config --global user.name "Murali"
@@ -36,7 +36,7 @@ git config --global user.name "John Doe"
 
 ---
 
-# 3. Configure Email
+## 3. Configure Email
 
 ```bash
 git config --global user.email "murali@gmail.com"
@@ -50,7 +50,7 @@ git config --global user.email "john@gmail.com"
 
 ---
 
-# 4. Check Configuration
+## 4. Check Configuration
 
 ```bash
 git config --list
@@ -58,7 +58,7 @@ git config --list
 
 ---
 
-# 5. Initialize Git Repository
+## 5. Initialize Git Repository
 
 ```bash
 git init
@@ -74,7 +74,7 @@ git init
 
 ---
 
-# 6. Check Repository Status
+## 6. Check Repository Status
 
 ```bash
 git status
@@ -82,29 +82,13 @@ git status
 
 ---
 
-# 7. View Files
-
-```bash
-dir
-```
-
-Linux/Mac:
-
-```bash
-ls
-```
-
----
-
-# 8. Add Single File
+## 7. Add Single File
 
 ```bash
 git add index.html
 ```
 
----
-
-# 9. Add Multiple Files
+## 8. Add Multiple Files
 
 ```bash
 git add file1.txt file2.txt
@@ -112,7 +96,7 @@ git add file1.txt file2.txt
 
 ---
 
-# 10. Add All Files
+## 9. Add All Files
 
 ```bash
 git add .
@@ -120,7 +104,7 @@ git add .
 
 ---
 
-# 11. Commit Changes
+## 10. Commit Changes
 
 ```bash
 git commit -m "Initial Commit"
@@ -128,13 +112,13 @@ git commit -m "Initial Commit"
 
 ---
 
-# 12. View Commit History
+## 11. View Commit History
 
 ```bash
 git log
 ```
 
-Short Version
+## 13. Short Version
 
 ```bash
 git log --oneline
@@ -142,7 +126,7 @@ git log --oneline
 
 ---
 
-# 13. Rename Branch
+## 13. Rename Branch
 
 ```bash
 git branch -M main
@@ -150,7 +134,7 @@ git branch -M main
 
 ---
 
-# 14. View Branches
+## 14. View Branches
 
 ```bash
 git branch
@@ -158,66 +142,65 @@ git branch
 
 ---
 
-# 15. Create New Branch
+## 15. Create New Branch
 
 ```bash
-git branch dev
+git branch <branch name>
 ```
 
 ---
 
-# 16. Switch Branch
+## 16. Switch Branch
 
 ```bash
-git checkout dev
+git checkout <branch name>
 ```
 
 OR
 
 ```bash
-git switch dev
+git switch <branch name>
 ```
 
 ---
 
-# 17. Create and Switch Branch
+## 17. Create and Switch Branch
 
 ```bash
-git checkout -b feature
+git checkout -b <branch name>
 ```
 
 OR
 
 ```bash
-git switch -c feature
+git switch -c <branch name>
 ```
 
 ---
 
-# 18. Merge Branch
+## 18. Merge Branch
 
 ```bash
 git checkout main
-git merge dev
+git merge <branch name>
 ```
 
 ---
 
-# 19. Delete Branch
+## 19. Delete Branch
 
 ```bash
-git branch -d dev
+git branch -d <branch name>
 ```
 
 Force Delete
 
 ```bash
-git branch -D dev
+git branch -D <branch name>
 ```
 
----
 
-# 20. Connect GitHub Repository
+## 20. Connect GitHub Repository
 
 ```bash
 git remote add origin https://github.com/username/repository.git
@@ -231,7 +214,7 @@ git remote -v
 
 ---
 
-# 21. Change Remote URL
+## 21. Change Remote URL
 
 ```bash
 git remote set-url origin https://github.com/username/newrepo.git
@@ -239,7 +222,7 @@ git remote set-url origin https://github.com/username/newrepo.git
 
 ---
 
-# 22. Push Code
+## 22. Push Code
 
 First Time
 
@@ -255,7 +238,7 @@ git push
 
 ---
 
-# 23. Clone Repository
+## 23. Clone Repository
 
 ```bash
 git clone https://github.com/username/repository.git
