@@ -246,7 +246,7 @@ git clone https://github.com/username/repository.git
 
 ---
 
-# 24. Download Latest Changes
+## 24. Download Latest Changes
 
 ```bash
 git pull origin main
@@ -254,7 +254,7 @@ git pull origin main
 
 ---
 
-# 25. Fetch Changes
+## 25. used to check we are in synk or not 
 
 ```bash
 git fetch
@@ -262,7 +262,7 @@ git fetch
 
 ---
 
-# 26. Compare Changes
+## 26. Compare Changes changes will appears here
 
 ```bash
 git diff
@@ -270,7 +270,7 @@ git diff
 
 ---
 
-# 27. Show Staged Changes
+## 27. Show Staged Changes
 
 ```bash
 git diff --staged
@@ -278,7 +278,7 @@ git diff --staged
 
 ---
 
-# 28. Remove File from Staging
+## 28. Remove File from Staging
 
 ```bash
 git restore --staged filename.txt
@@ -286,7 +286,7 @@ git restore --staged filename.txt
 
 ---
 
-# 29. Restore File
+## 29. Restore File
 
 ```bash
 git restore filename.txt
@@ -294,7 +294,7 @@ git restore filename.txt
 
 ---
 
-# 30. Remove File
+## 30. Remove File
 
 ```bash
 git rm filename.txt
@@ -310,7 +310,7 @@ git rm --cached filename.txt
 
 ---
 
-# 32. Create Tag
+## 32. Create Tag
 
 ```bash
 git tag v1.0
@@ -318,7 +318,7 @@ git tag v1.0
 
 ---
 
-# 33. List Tags
+## 33. List Tags
 
 ```bash
 git tag
@@ -326,7 +326,7 @@ git tag
 
 ---
 
-# 34. Push Tag
+## 34. Push Tag
 
 ```bash
 git push origin v1.0
@@ -334,7 +334,7 @@ git push origin v1.0
 
 ---
 
-# 35. Stash Changes
+## 35. Stash Changes
 
 ```bash
 git stash
@@ -354,7 +354,7 @@ git stash pop
 
 ---
 
-# 36. Show Remote Repository
+## 36. Show Remote Repository
 
 ```bash
 git remote -v
@@ -362,7 +362,7 @@ git remote -v
 
 ---
 
-# 37. Remove Remote
+## 37. Remove Remote
 
 ```bash
 git remote remove origin
@@ -370,7 +370,7 @@ git remote remove origin
 
 ---
 
-# 38. Check Current Branch
+## 38. Check Current Branch
 
 ```bash
 git branch --show-current
@@ -378,7 +378,7 @@ git branch --show-current
 
 ---
 
-# 39. Show Commit Details
+## 39. Show Commit Details
 
 ```bash
 git show
@@ -386,7 +386,7 @@ git show
 
 ---
 
-# 40. Reset Last Commit (Keep Changes)
+## 40. Reset Last Commit (Keep Changes)
 
 ```bash
 git reset --soft HEAD~1
@@ -394,7 +394,7 @@ git reset --soft HEAD~1
 
 ---
 
-# 41. Reset Last Commit (Delete Changes)
+## 41. Reset Last Commit (Delete Changes)
 
 ```bash
 git reset --hard HEAD~1
@@ -402,7 +402,7 @@ git reset --hard HEAD~1
 
 ---
 
-# 42. Revert Commit
+## 42. Revert Commit
 
 ```bash
 git revert HEAD
@@ -410,7 +410,7 @@ git revert HEAD
 
 ---
 
-# 43. Clean Untracked Files
+## 43. Clean Untracked Files
 
 ```bash
 git clean -f
@@ -418,7 +418,7 @@ git clean -f
 
 ---
 
-# 44. Show Working Tree
+## 44. Show Working Tree
 
 ```bash
 git status
@@ -426,7 +426,7 @@ git status
 
 ---
 
-# 45. Show Repository Information
+## 45. Show Repository Information
 
 ```bash
 git remote show origin
@@ -436,37 +436,37 @@ git remote show origin
 
 # Complete Git Workflow
 
-## Step 1
+### Step 1
 
 ```bash
 git init
 ```
 
-## Step 2
+### Step 2
 
 ```bash
 git add .
 ```
 
-## Step 3
+### Step 3
 
 ```bash
 git commit -m "Initial Commit"
 ```
 
-## Step 4
+### Step 4
 
 ```bash
 git branch -M main
 ```
 
-## Step 5
+### Step 5
 
 ```bash
 git remote add origin https://github.com/username/repository.git
 ```
 
-## Step 6
+### Step 6
 
 ```bash
 git push -u origin main
@@ -474,7 +474,7 @@ git push -u origin main
 
 ---
 
-# Daily Git Workflow
+## Daily Git Workflow
 
 ```bash
 git status
@@ -485,7 +485,7 @@ git push
 
 ---
 
-# Clone Existing Repository
+## Clone Existing Repository
 
 ```bash
 git clone https://github.com/username/repository.git
@@ -528,8 +528,10 @@ git push
 # Common Git Command Sequence
 
 ```bash
+
 git status
 git add .
 git commit -m "Added new feature"
 git push
+
 ```
