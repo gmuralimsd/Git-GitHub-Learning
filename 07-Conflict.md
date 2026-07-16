@@ -100,3 +100,28 @@ git merge --abort
 ```
 
 Abort = Cancel the merge using git merge --abort.
+
+
+work flow
+
+```
+        Initial Commit
+              |
+      -----------------
+      |               |
+    main          feature
+      |               |
+AWS Change      Docker Change
+      |               |
+      ------Merge------
+             |
+        Merge Conflict
+             |
+      Edit the file
+             |
+         git add
+             |
+      git commit
+             |
+      Conflict Resolved
+```
